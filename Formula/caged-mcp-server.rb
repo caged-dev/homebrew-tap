@@ -11,7 +11,7 @@ class CagedMcpServer < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/caged-dev/mcp-server/releases/download/v0.1.0/caged-mcp-server_0.1.0_darwin_amd64.tar.gz"
-      sha256 "02eb596a51e33dac0a131eebeb11d92a94ef21a4de1a72c37f835de1c8ff7703"
+      sha256 "886f1c1fffbf7cac145fb9b3e32c89e08b28ad3addace284aca7008f4806a4ac"
 
       define_method(:install) do
         bin.install "caged-mcp-server"
@@ -19,7 +19,7 @@ class CagedMcpServer < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/caged-dev/mcp-server/releases/download/v0.1.0/caged-mcp-server_0.1.0_darwin_arm64.tar.gz"
-      sha256 "cdec1f9dad2945ffc15aca26245c771c4c1c17dacf599afabf0fb2b19684dd73"
+      sha256 "e93148a0573d0eab97e004ed3fce2ece89fb1fed88b709a6c38a3c77209fde3f"
 
       define_method(:install) do
         bin.install "caged-mcp-server"
@@ -30,14 +30,14 @@ class CagedMcpServer < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/caged-dev/mcp-server/releases/download/v0.1.0/caged-mcp-server_0.1.0_linux_amd64.tar.gz"
-      sha256 "1851bdda9799d7280b6e4902c324085aba8c39080a42715da3f6e47a467f093b"
+      sha256 "9aaf6675dcec4551163b16312a2de621b1e5c2d342e11d9ddd97ab0744395ddf"
       define_method(:install) do
         bin.install "caged-mcp-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/caged-dev/mcp-server/releases/download/v0.1.0/caged-mcp-server_0.1.0_linux_arm64.tar.gz"
-      sha256 "c2861a7a7cc522f158b5c5c8fe7a9a8980173e39059f50d1574fee73cc39be3d"
+      sha256 "fc260d85dd499431e37dd03e37299c37f9e0c7d70df0d440df8823954f136679"
       define_method(:install) do
         bin.install "caged-mcp-server"
       end
