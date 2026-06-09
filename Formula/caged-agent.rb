@@ -11,7 +11,7 @@ class CagedAgent < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/caged-dev/agent/releases/download/v0.1.0/caged-agent_0.1.0_darwin_amd64.tar.gz"
-      sha256 "bd36fc719911db05ff9baeeb8e6d51b93717d0d7eeaca90817c969c966cecdac"
+      sha256 "31cef63a0b5e41a7d0d84885e2b9c2a2c742635e209c636abf51836d8358ce07"
 
       define_method(:install) do
         bin.install "caged-agent"
@@ -19,7 +19,7 @@ class CagedAgent < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/caged-dev/agent/releases/download/v0.1.0/caged-agent_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c456e7811644187ae6a4728ff6dfa3f5ccf953b155bc3124b6b826f44f676fd0"
+      sha256 "ea8398cc5327ca8c7c3b95976274d3cb50f9fb6fd13c7d47ef636544cb63d1e2"
 
       define_method(:install) do
         bin.install "caged-agent"
@@ -30,14 +30,14 @@ class CagedAgent < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/caged-dev/agent/releases/download/v0.1.0/caged-agent_0.1.0_linux_amd64.tar.gz"
-      sha256 "519e6d8e518b7b6e73671dbdab34d70f32bfc4b7129e8046cd1b8c089f889a09"
+      sha256 "39bf00fc32bbc3eda49017f14aabd2c35afe0b80e0ff690f4e11679b24d60b87"
       define_method(:install) do
         bin.install "caged-agent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/caged-dev/agent/releases/download/v0.1.0/caged-agent_0.1.0_linux_arm64.tar.gz"
-      sha256 "8f33d4a2823c21cba5f00e1cfddee9ab9ef8baa1e0528e1f20c06edb15e853e3"
+      sha256 "e63725868212fb6d84625758c3c037df9f2170d6f096df37da4518919d68c4f7"
       define_method(:install) do
         bin.install "caged-agent"
       end
