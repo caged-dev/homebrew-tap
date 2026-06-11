@@ -5,21 +5,21 @@
 class Caged < Formula
   desc "CLI for the Caged AI Agent Sandbox Platform"
   homepage "https://caged.dev"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/caged-dev/cli/releases/download/v0.1.5/caged_0.1.5_darwin_amd64.tar.gz"
-      sha256 "93af9724d4fc5c8ff2ed9029f8793031ff702eebf5eb168aa5906b93fc79ec33"
+      url "https://github.com/caged-dev/cli/releases/download/v0.1.6/caged_0.1.6_darwin_amd64.tar.gz"
+      sha256 "b4f8c7ce9269e0c50b803980635069c5263e1d7d41a2f09b6aa36a72a86d1c8e"
 
       define_method(:install) do
         bin.install "caged"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/caged-dev/cli/releases/download/v0.1.5/caged_0.1.5_darwin_arm64.tar.gz"
-      sha256 "7610619efd792beb7baf8043c3ee3184bacaa138edafca2761e97851a6f0c67a"
+      url "https://github.com/caged-dev/cli/releases/download/v0.1.6/caged_0.1.6_darwin_arm64.tar.gz"
+      sha256 "f95f6d6893d74bfabb7d874e09451c5bb209e8e5d76bc0920acc3a6cd1e67751"
 
       define_method(:install) do
         bin.install "caged"
@@ -29,15 +29,15 @@ class Caged < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caged-dev/cli/releases/download/v0.1.5/caged_0.1.5_linux_amd64.tar.gz"
-      sha256 "17d2ef169cec22aaa9e3212667abe7e8be1e43624eb816161af71c1da001326d"
+      url "https://github.com/caged-dev/cli/releases/download/v0.1.6/caged_0.1.6_linux_amd64.tar.gz"
+      sha256 "ddd9ee27a2bd85e6a15ebc8f9ff40085500b1e1eaf68001eac3a80b29b28e282"
       define_method(:install) do
         bin.install "caged"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caged-dev/cli/releases/download/v0.1.5/caged_0.1.5_linux_arm64.tar.gz"
-      sha256 "0279004a9a73214e5365da68ad4f0cd4e65de45215c29b5cec4bf23d69e3a4bc"
+      url "https://github.com/caged-dev/cli/releases/download/v0.1.6/caged_0.1.6_linux_arm64.tar.gz"
+      sha256 "f9371d69e9f68bae8ed43c39edcc1113685c3116d293dc1d2d02648eee974036"
       define_method(:install) do
         bin.install "caged"
       end
