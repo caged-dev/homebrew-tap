@@ -11,7 +11,7 @@ class Caged < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/caged-dev/cli/releases/download/v0.1.11/caged_0.1.11_darwin_amd64.tar.gz"
-      sha256 "9593771f7ee836300037fd85b4bc79ae2e69bb785279da3cef8616b44581e211"
+      sha256 "83b63c5338f033f86c43acc66e6191f5510d48e03d87d90bec3d6fe03193b903"
 
       define_method(:install) do
         bin.install "caged"
@@ -19,7 +19,7 @@ class Caged < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/caged-dev/cli/releases/download/v0.1.11/caged_0.1.11_darwin_arm64.tar.gz"
-      sha256 "681da9791320c977e1dd6cb6807b71842b1e4c9cbb502d2220487648264d8c7d"
+      sha256 "1df03f7076e536a8a0c4df86794b8c108ff379da706283c884632b77c7edd7e2"
 
       define_method(:install) do
         bin.install "caged"
@@ -30,14 +30,14 @@ class Caged < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/caged-dev/cli/releases/download/v0.1.11/caged_0.1.11_linux_amd64.tar.gz"
-      sha256 "be7561f6374b4092ff3cbbd198d800bc74142e4be99ca31d5120bf300f16c4db"
+      sha256 "d1fb271798944d7553b519cda17b0869a45fd119c27a6e0f94d37f8d3408333e"
       define_method(:install) do
         bin.install "caged"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/caged-dev/cli/releases/download/v0.1.11/caged_0.1.11_linux_arm64.tar.gz"
-      sha256 "cf9c992b9316e371022c520976d26eb7868c77a03f736682544f6b6e480c89e6"
+      sha256 "4a8eb6d611c1c25d8f5b10021f10bbf5839b5d1d2c37858b5ad791632c3f8624"
       define_method(:install) do
         bin.install "caged"
       end
